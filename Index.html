@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Interaktif Sekolah</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏫 Peta Interaktif Sekolah</h1>
+    <p>SMK Negeri 1 Salatiga</p>
+</header>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>Daftar Lokasi</h2>
+
+        <button onclick="zoomToLocation(-7.3315,110.5080)">
+            Gerbang Utama
+        </button>
+
+        <button onclick="zoomToLocation(-7.3312,110.5078)">
+            Ruang Guru
+        </button>
+
+        <button onclick="zoomToLocation(-7.3311,110.5082)">
+            Perpustakaan
+        </button>
+
+        <button onclick="zoomToLocation(-7.3308,110.5079)">
+            Laboratorium Komputer
+        </button>
+
+        <button onclick="zoomToLocation(-7.3317,110.5084)">
+            Kantin
+        </button>
+
+        <button onclick="zoomToLocation(-7.3314,110.5085)">
+            Mushola
+        </button>
+
+        <button onclick="zoomToLocation(-7.3310,110.5086)">
+            Lapangan
+        </button>
+
+    </div>
+
+    <div id="map"></div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
